@@ -15,12 +15,12 @@ include_once "../phpFunctionLibrary/renamedImage.php";
     
 
     resizingImage($image,$file,$desiredHeight,$prefix1,$prefix2,$alternatePrefix);
-    renamedImage($image,$file,$prefix1,$prefix2,$alternatePrefix);
+    
 
 
 $style=$_POST['style'];
 $color=$_POST['color'];
 $fabrication=$_POST['fabrication'];
 $fob=$_POST['fob'];
-$sketch=$_FILES['sketch']['name'];
+$sketch=renamedImage($image,$file,$prefix1,$prefix2,$alternatePrefix);
 
