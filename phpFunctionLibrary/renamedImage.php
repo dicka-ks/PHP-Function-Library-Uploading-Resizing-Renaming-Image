@@ -26,5 +26,5 @@ function renamedImage($image,$file,$prefix1,$prefix2,$alternatePrefix){
     //new image name
     $fileMySQL = $image.'_'.$identifier.'_'.$identifier2.'.'.$extension;
     
-    echo $fileMySQL;
+    return $fileMySQL;
     }
